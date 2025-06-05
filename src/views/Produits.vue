@@ -102,6 +102,7 @@
 
   onMounted(() => {
     loadProduits(baseUrl.value);
+    firstPageDisabled.value = true;
   });
 
 </script>
@@ -110,16 +111,6 @@
   <main>
     <div>
       <h1>Les produits</h1>
-      <!-- Un formulaire pour saisir les valeurs de la catégorie à ajouter -->
-      <!--<form @submit.prevent="ajouteCategorie">
-        <div>
-          <input id="libelle" v-model="" placeholder="Libelle" />
-        </div>
-        <div>
-          <input id="description" v-model="" placeholder="Description" />
-        </div>
-        <button type="submit">Ajouter</button>
-      </form>-->
     </div>
     <div>
       <table>
